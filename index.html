@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício Bootstrap - EBAC</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <style>
+    .carousel-item img {
+      object-fit: cover;
+      height: 60vh;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="bg-dark text-white text-center p-3 mb-4">
+    <h1>Meu Projeto Bootstrap EBAC</h1>
+  </header>
+
+  <main class="container">
+
+    <section id="carousel-exemplo" class="carousel slide mb-5" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://img.freepik.com/free-photo/retro-computer-technology-with-monitor-hardware_23-2149506839.jpg" class="d-block w-100" alt="Tecnologia retrô">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Primeiro Slide</h5>
+            <p>Uma imagem representando tecnologia e design.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600" class="d-block w-100" alt="Equipe trabalhando">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Segundo Slide</h5>
+            <p>Colaboração e desenvolvimento em equipe.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600" class="d-block w-100" alt="Código em um monitor">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Terceiro Slide</h5>
+            <p>O mundo da programação e do desenvolvimento web.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-exemplo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-exemplo" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </section>
+
+    <section>
+      <h2 class="text-center mb-4">Nossos Serviços</h2>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800" class="card-img-top" alt="Desenvolvimento Web">
+            <div class="card-body">
+              <h5 class="card-title">Desenvolvimento Web</h5>
+              <p class="card-text">Criamos sites e sistemas web modernos e responsivos, utilizando as melhores tecnologias do mercado.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.doYHfVKgVncrGIL5jmSOMgHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Design UI/UX">
+            <div class="card-body">
+              <h5 class="card-title">Design UI/UX</h5>
+              <p class="card-text">Focamos na experiência do usuário para criar interfaces intuitivas, agradáveis e eficientes.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800" class="card-img-top" alt="Consultoria de TI">
+            <div class="card-body">
+              <h5 class="card-title">Consultoria de TI</h5>
+              <p class="card-text">Oferecemos consultoria especializada para otimizar a infraestrutura e os processos da sua empresa.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center p-3 mt-5">
+    <p>&copy; 2025 Exercício ebac. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
